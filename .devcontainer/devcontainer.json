@@ -1,0 +1,45 @@
+{
+  "name": "Rust Development Container Template",
+  "dockerFile": "Dockerfile",
+
+  "customizations": {
+    "settings": {
+      "files.eol": "\n",
+      "editor.formatOnSave": true,
+      "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+      }
+    },
+    "vscode": {
+      "extensions": [
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "foxundermoon.shell-format",
+        "Gruntfuggly.todo-tree",
+        "hashicorp.terraform",
+        "mhutchie.git-graph",
+        "ms-azuretools.vscode-docker",
+        "rust-lang.rust-analyzer",
+        "streetsidesoftware.code-spell-checker",
+        "usernamehw.errorlens",
+        "vscode-icons-team.vscode-icons"
+      ],
+      "settings": {
+        "workbench.iconTheme": "vscode-icons",
+        "rust-analyzer.check.command": "clippy",
+        "rust-analyzer.checkOnSave.extraArgs": [
+          "--target-dir",
+          "${containerWorkspaceFolder}/target"
+        ]
+      }
+    }
+  },
+
+  "postCreateCommand": ".devcontainer/scripts/postCreate.sh",
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  "remoteUser": "root"
+}
