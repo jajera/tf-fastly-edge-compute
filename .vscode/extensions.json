@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "davidanson.vscode-markdownlint",
+    "esbenp.prettier-vscode",
+    "foxundermoon.shell-format",
+    "Gruntfuggly.todo-tree",
+    "hashicorp.terraform",
+    "mhutchie.git-graph",
+    "ms-azuretools.vscode-docker",
+    "rust-lang.rust-analyzer",
+    "streetsidesoftware.code-spell-checker",
+    "usernamehw.errorlens",
+    "vscode-icons-team.vscode-icons"
+  ]
+}
